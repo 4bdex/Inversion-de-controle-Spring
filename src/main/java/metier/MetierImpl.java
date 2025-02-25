@@ -2,15 +2,15 @@ package metier;
 
 import dao.IDao;
 
+import org.springframework.stereotype.Service;
+
+@Service("metier")
 public class MetierImpl implements IMetier {
     // loose coupling
     private IDao dao;
 
     public void setDao(IDao dao) {
         this.dao = dao;
-    }
-
-    public MetierImpl() {
     }
 
     public MetierImpl(IDao dao) {
